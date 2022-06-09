@@ -127,7 +127,7 @@ public class UserServlet extends HttpServlet {
                    out.println(job.build().toString());
                 } 
                 break;
-            case "/editProfile":
+             case "/editProfile":
                 JsonReader jsonReader1 = Json.createReader(request.getReader());//Изменнение профиля
                 JsonObject jo1 = jsonReader1.readObject();
                 int id1 = jo1.getInt("id");

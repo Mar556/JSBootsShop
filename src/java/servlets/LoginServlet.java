@@ -126,7 +126,7 @@ public class LoginServlet extends HttpServlet {
                 session = request.getSession(false);
                 if(session != null){
                     session.invalidate();
-                    job.add("info", "Вы вышли");
+                    job.add("info", "You successfully loged out");
                     job.add("auth", false);
                     try (PrintWriter out = response.getWriter()) {
                         out.println(job.build().toString());
